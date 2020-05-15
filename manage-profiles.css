@@ -1,0 +1,23 @@
+body 
+{
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto 75px;
+}
+
+.grid-item {
+    padding: 5px 10px;
+}
+
+.grid-item.title {
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.grid-item .input-field {
+    width: 100%;
+    box-sizing: border-box;
+}

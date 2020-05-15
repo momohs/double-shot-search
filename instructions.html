@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>Instructions on using Double Shot Search</title>
-	<link href="instructions.css" rel="stylesheet">
-	<script src="jquery-1.11.1.min.js"></script>
-	<script src="instructions.js"></script>
+    <link href="instructions.css" rel="stylesheet">
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="profile-manager.js"></script>
+    <script src="instructions.js"></script>
   </head>
   <body>
   <div>The <b>Double Shot Search</b> Chrome extension allows searching in both Bing and Google at the same time.</div>
@@ -21,10 +22,16 @@
         <li><b>Or</b> you can search below by typing a query and pressing Enter.
     </ol>
     <hr>
+    <div>You can also use profiles to compare search results between any two arbitrary URLs.</div>
+    <div>Active profile:
+      <select id="active-profile-selector"></select>
+      <input type="button" id="add-profile-button" value="Manage profiles">
+    </div>
+    <hr>
     <form method="GET" id="double-shot-search-box" target="_blank">
         <img src='DoubleShotSearchLogo16.png' width='16' height='16'>
         <input type='text' name='q' id='query-box' size="30">
-        <input type="submit" value="Search Bing and Google">
+        <input type="submit" id="search-button">
     </form>
   </body>
 </html>
